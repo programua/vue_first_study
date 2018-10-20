@@ -10,21 +10,14 @@
 </head>
 <body>
     <h1>Vue.js</h1>
-    <div id="scroll">
         <div id="contents">
-            <device-template name="XX01" made="japan" price="21,000"></device-template>
-            <device-template name="XX02" made="japan" price="18,000"></device-template>
-            <device-template name="XX03" made="china" price="20,000"></device-template>
-            <device-template name="XX04" made="china" price="10,000"></device-template>
-            <device-template name="XX05" made="america" price="16,000"></device-template>
-            <device-template name="XX06" made="japan" price="28,000"></device-template>
-            <device-template name="XX07" made="canada" price="1,000"></device-template>
-            <device-template name="XX08" made="china" price="2,000"></device-template>
-            <device-template name="XX09" made="china" price="8,000"></device-template>
+            <device-template 
+              v-for="device in devices"
+              v-bind:key="device.name"
+              v-bind:item="device">
+            </device-template>
         </div>
         <script src="index.js"></script>
-    </div>
-    <div id="contents">
     </div>
 </body>
 </html>
