@@ -1,0 +1,31 @@
+h1 {
+  text-align: center; }
+
+#scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
+
+#contents {
+  display: inline-table;
+  max-width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.device {
+  display: table-cell;
+  height: 300px; }
+
+.img-box {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 10px;
+  height: 200px;
+  width: 150px;
+  border: solid 1px;
+  background-color: gray; }
+
+.device p {
+  text-align: center; }
+
+.info-box {
+  text-align: center; }
